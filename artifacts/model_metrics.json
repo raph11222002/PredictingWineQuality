@@ -1,0 +1,18 @@
+{
+  "roc_auc": 0.9402653009822852,
+  "f1": 0.75,
+  "brier": 0.053489718711642896,
+  "features": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol"
+  ]
+}
