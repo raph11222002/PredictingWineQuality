@@ -18,7 +18,7 @@ features = schema["features"]
 st.subheader("🔬 Single Sample Prediction")
 inputs = {}
 for feat in features:
-    inputs[feat] = st.number_input(feat, value=0.0)
+    inputs[feat] = st.number_input(feat, value=0.0, step=0.001, format="%.5f")
 
 threshold = st.slider("Decision threshold", 0.05, 0.95, 0.5, 0.01)
 
