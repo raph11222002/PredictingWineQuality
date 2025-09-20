@@ -1,3 +1,4 @@
+# app.py
 import streamlit as st
 import pandas as pd
 import joblib
@@ -18,7 +19,6 @@ features = schema["features"]
 st.subheader("🔬 Single Sample Prediction")
 inputs = {}
 for feat in features:
-    for feat in features:
         inputs[feat] = st.number_input(
         feat,
         min_value=0.0,
