@@ -49,5 +49,5 @@ if file:
         proba = pipe.predict_proba(df[features])[:, 1]
         df["prob_good"] = proba
         df["pred_good"] = (proba >= threshold).astype(int)
-        st.write(df.head())
+        st.dataframe(df)
         st.download_button("Download Results", df.to_csv(index=False).encode(), "wine_predictions.csv")
